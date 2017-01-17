@@ -139,6 +139,11 @@ for f in $(find security -iname '*.h'); do
 	copy_mkdir "$target_dir" "$f"
 done
 
+# Add android staging files.
+for f in $(find drivers/staging/android -iname '*.h'); do
+	copy_mkdir "$target_dir" "$f"
+done
+
 # Copy over tools include as some builds require this.
 mkdir -p "$target_dir/tools"
 copy_dir tools/include "$target_dir/tools"
