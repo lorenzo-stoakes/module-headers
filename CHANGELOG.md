@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.0.8-ls
+
+(forked from mainline)
+
+* Copy android staging headers.
+
 ## v0.0.7
 
 * Only copy directories if they exist.
